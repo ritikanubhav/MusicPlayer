@@ -1,0 +1,93 @@
+.card{
+    background:rgb(183, 230, 230);
+    user-select: none;
+    cursor:pointer;
+    user-select: none;
+    border:2px solid white;
+    border-radius: 15px ;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width:300px;
+    padding:30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.time{
+    width:90%;
+    font-size: 11px;
+    display:flex;
+    justify-content: space-between;
+}
+.time>p{
+    margin-top:5px;
+}
+.slider{
+    width:90%; 
+    accent-color: rgb(122,174,205);
+    cursor: pointer;
+}
+
+.cd{
+    position: relative;
+    width:70%;
+}
+@keyframes revolve{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+
+.cd>img{
+    width:100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: revolve 7s linear infinite normal forwards;
+}
+.circle{
+    position: absolute;
+    width:30%;
+    height:30%;
+    border:2px solid white;
+    border-radius: 50%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: inset 0 0 50px rgb(183, 230, 230);
+    top:35%;
+    left:35%;
+}
+.title{
+    margin-top:10px;
+    margin-bottom:0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.author{
+    margin-top:5px;
+    font-size: 13px;
+}
+.button-container{
+    width:90%;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    width:28px;
+    height:28px;
+    padding:8px;
+    border-radius:50%;
+    background-color: white;
+}
+
+.loopActive{
+    color:rgb(122,174,205);
+}
+@media only screen and (max-width:400px){
+
+    .card{
+        width:220px;
+        padding:50px 20px;
+    }
+    
+}

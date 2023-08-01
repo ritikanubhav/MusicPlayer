@@ -1,13 +1,10 @@
 import React,{useState,useEffect,useRef} from 'react';
 import {BsPlayFill,BsPauseFill,BsShuffle,BsSkipEndFill,BsSkipStartFill} from "react-icons/bs";
 import {ImLoop} from "react-icons/im";
-
+import"./player.css"
 export default function Player(props)
 {
-    const [active,setActive]=useState({
-        isLoop:false,
-        isPlaying:false,
-    })
+    const {active,setActive}=props
 
     console.log("player rendered",active.isPlaying)
 
@@ -58,6 +55,13 @@ export default function Player(props)
         console.log("skipSong",props.index)
         setCurrentTime(0)
         audioEl.current.currentTime=0;
+        document.getElementById("cover-img").style.transform="rotate()";
+        setActive(function(prev){
+            return({
+                ...prev,
+                isPlaying:true
+            })
+        })
         if(forward)
         {
             props.setIndex((temp)=>{
@@ -88,7 +92,7 @@ export default function Player(props)
             console.log("loop clicked",active.isLoop)
     }
 
-    function clickHandler(){ 
+    function playHandler(){ 
         setActive(function(prev){
             return({
                 ...prev,
@@ -98,8 +102,9 @@ export default function Player(props)
         console.log(" play clicked",active.isPlaying)
     }
 
-    function shuffleHandler(event){
+    function shuffleHandler(){
         const random=Math.floor(Math.random() * props.music.length)
+        document.getElementById(`play-gif${props.index}`).style.visibility="hidden";
         props.setIndex(()=>random)
         console.log("shuffle clicked")
     }
@@ -115,7 +120,9 @@ export default function Player(props)
             <audio 
             src={props.music[props.index].url} 
             ref={audioEl} preload="auto" 
-            onEnded={()=>skipSong(true)}
+            onEnded={()=>{
+                document.getElementById(`play-gif${props.index}`).style.visibility="hidden";
+                skipSong(true)}}
             />
 
             <div className="cd">
@@ -150,8 +157,8 @@ export default function Player(props)
                 <BsShuffle   id="shuffle" onClick={shuffleHandler}/>
                 <BsSkipStartFill  className="button"  onClick={()=>skipSong(false)}/>
                 {!(active.isPlaying) ?
-                 <BsPlayFill  className="button" onClick={clickHandler} />
-                : <BsPauseFill  className="button" onClick={clickHandler} />
+                 <BsPlayFill  className="button" onClick={playHandler} />
+                : <BsPauseFill  className="button" onClick={playHandler} />
                 }
                 <BsSkipEndFill  className="button" onClick={()=>skipSong(true)}/>
                 <ImLoop className={active.isLoop && "loopActive"} onClick={loopHandler}/>
