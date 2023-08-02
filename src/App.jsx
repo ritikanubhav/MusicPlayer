@@ -8,6 +8,7 @@ export default function App()
 {
   const[music]=useState(MusicData)
   const[index,setIndex]=useState(0);
+  const [prevIndex,setPrevIndex]=useState(-1);
   const [active,setActive]=useState({
     isLoop:false,
     isPlaying:false,
@@ -19,6 +20,8 @@ export default function App()
       <div className="main">
         <VerticalNavbar />
         <PlayList
+          prevIndex={prevIndex}
+          setPrevIndex={setPrevIndex}
           active={active}
           setActive={setActive}
           index={index}
@@ -26,6 +29,8 @@ export default function App()
           music={music}
         />
         <Player
+          prevIndex={prevIndex}
+          setPrevIndex={setPrevIndex}
           active={active}
           setActive={setActive}
           index={index}

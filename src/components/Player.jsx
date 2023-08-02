@@ -55,7 +55,7 @@ export default function Player(props)
         console.log("skipSong",props.index)
         setCurrentTime(0)
         audioEl.current.currentTime=0;
-        document.getElementById("cover-img").style.transform="rotate()";
+        props.setPrevIndex(props.index)
         setActive(function(prev){
             return({
                 ...prev,

@@ -4,8 +4,7 @@ import PlayListSong from "./PlayListSong"
 import { useState } from "react"
 export default function PlayList(props){
     const songs=props.music
-    const {active,setActive}=props
-    const [prevIndex,setPrevIndex]=useState(-1);
+    const {active,setActive,prevIndex,setPrevIndex}=props
     return(
         <div className="playList">
         <h2 className="heading">ALL SONGS</h2>
