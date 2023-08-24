@@ -1,11 +1,11 @@
 export default[
-    {
-        title:"DARU BADNAAM KARTI",
-        author:"Kamal Kahlon",
-        duration:186,
-        url:"./songs/Daru Badnaam.m4a",
-        img:"./images/daru badnam.jpg"
-    },
+    // {
+    //     title:"DARU BADNAAM KARTI",
+    //     author:"Kamal Kahlon",
+    //     duration:186,
+    //     url:"./songs/Daru Badnaam.m4a",
+    //     img:"./images/daru badnam.jpg"
+    // },
     {
         title:"O SUDH BUDH KHOYI",
         author:"Arijit Singh",
@@ -34,13 +34,13 @@ export default[
         url:"./songs/Socha Hai Song.m4a",
         img:"./images/socha hai.jpeg"
     },
-    {
-        title:"DARU BADNAAM KARTI",
-        author:"Kamal Kahlon",
-        duration:186,
-        url:"./songs/Daru Badnaam.m4a",
-        img:"./images/daru badnam.jpg"
-    },
+    // {
+    //     title:"DARU BADNAAM KARTI",
+    //     author:"Kamal Kahlon",
+    //     duration:186,
+    //     url:"./songs/Daru Badnaam.m4a",
+    //     img:"./images/daru badnam.jpg"
+    // },
     {
         title:"O SUDH BUDH KHOYI",
         author:"Arijit Singh",
