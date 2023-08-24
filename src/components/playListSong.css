@@ -9,13 +9,14 @@
     align-items: center;
     cursor: pointer;
     user-select: none;
-}
-.playListSong:hover{
-    border: solid 2px white;
+    transition: all 0.3s;
+    color:rgba(0, 0, 0,0.8);
+
 }
 .img-detail{
     display: flex;
     align-items: center;
+    transition: all 0.3s;
 }
 .img-detail img{
     width:40px;
@@ -38,7 +39,12 @@
     padding:0;
 }
 h3{
-    font-weight:600;
+    font-weight:570;
+    font-size: 1.1em;
+}
+.playListSong:hover .img-detail{
+    scale:1.1;
+    transform: translate(30px);
 }
 .song-detail p{
     font-size:14px;

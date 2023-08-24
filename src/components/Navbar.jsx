@@ -8,7 +8,7 @@ export default function(){
         <div className="navbar">
             <img className="logo animate__animated animate__rubberBand animate__slow" src="./images/logo2.png" />
             <div className="typewriter">
-                <h1>Music Heals Soul</h1>
+                <h1>Apnaa<span className="headerpart">Music</span></h1>
             </div>
             {!(darkMode) ? <MdLightMode className='darkmode' /> : <MdDarkMode className="button"/>}
         </div>

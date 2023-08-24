@@ -105,7 +105,8 @@ export default function Player(props)
     function shuffleHandler(){
         const random=Math.floor(Math.random() * props.music.length)
         document.getElementById(`play-gif${props.index}`).style.visibility="hidden";
-        props.setIndex(()=>random)
+        document.getElementById(`play-gif${random}`).style.visibility="visible";
+        props.setIndex(random)
         console.log("shuffle clicked")
     }
 

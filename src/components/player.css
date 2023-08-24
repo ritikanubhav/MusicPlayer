@@ -1,9 +1,9 @@
 .card{
-    background:rgb(183, 230, 230);
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     user-select: none;
     cursor:pointer;
     user-select: none;
-    border:2px solid white;
+    /* border:2px solid white; */
     border-radius: 15px ;
     display:flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
 }
 .slider{
     width:90%; 
-    accent-color: rgb(122,174,205);
+    accent-color:rgba(216, 199, 202, 0.8);
     cursor: pointer;
 }
 
@@ -39,7 +39,6 @@
 
 .cd>img{
     width:100%;
-    border: 2px solid white;
     border-radius: 50%;
     animation: revolve 7s linear infinite normal forwards;
 }
@@ -49,8 +48,7 @@
     height:30%;
     border:2px solid white;
     border-radius: 50%;
-    background-color:rgb(255, 255, 255);
-    box-shadow: inset 0 0 50px rgb(183, 230, 230);
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     top:35%;
     left:35%;
 }
@@ -58,12 +56,14 @@
     margin-top:10px;
     margin-bottom:0px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 590;
     color: #333333;
 }
 .author{
     margin-top:5px;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
+    color:rgba(0, 0, 0,0.5);
 }
 .button-container{
     width:90%;
@@ -81,7 +81,7 @@
 }
 
 .loopActive{
-    color:rgb(122,174,205);
+    color:rgb(245, 159, 175);
 }
 @media only screen and (max-width:400px){
 

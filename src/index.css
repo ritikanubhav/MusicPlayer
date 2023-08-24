@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    background:rgb(183, 230, 230);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .app{

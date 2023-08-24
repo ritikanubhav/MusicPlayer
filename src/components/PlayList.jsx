@@ -1,7 +1,6 @@
 import React from "react"
 import "./playlist.css"
 import PlayListSong from "./PlayListSong"
-import { useState } from "react"
 export default function PlayList(props){
     const songs=props.music
     const {active,setActive,prevIndex,setPrevIndex}=props
