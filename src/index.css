@@ -26,10 +26,13 @@ body{
     align-items: center;
 }
 
-@media only screen and (max-width:400px){
-    .app{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
+@media only screen and (max-width:750px){
+    
+    .main{
+        display:flex;
+        flex-direction:column;
+    }
+    .playList{
+        order:2;
     }
 }

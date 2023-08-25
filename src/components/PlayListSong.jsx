@@ -45,9 +45,9 @@ export default function PlayListSong(props){
                         </div>
                     </div>
                     <img src="./images/play7.gif" id={`play-gif${props.index}`} className="play-gif" style={{width:'35px'}}/>
-                    <AiOutlineHeart className="icon"/>
-                    <p>{Math.floor(duration/60)}:{formatter(duration)}</p>
-                    <BsThreeDotsVertical/>
+                    <AiOutlineHeart className="icon heart"/>
+                    <p className='duration'>{Math.floor(duration/60)}:{formatter(duration)}</p>
+                    <BsThreeDotsVertical className="more-option"/>
         </div>
     )
 }

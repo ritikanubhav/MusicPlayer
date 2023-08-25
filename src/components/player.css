@@ -3,7 +3,6 @@
     user-select: none;
     cursor:pointer;
     user-select: none;
-    /* border:2px solid white; */
     border-radius: 15px ;
     display:flex;
     flex-direction: column;
@@ -83,11 +82,11 @@
 .loopActive{
     color:rgb(245, 159, 175);
 }
-@media only screen and (max-width:400px){
 
+@media only screen and (max-width:750px){
     .card{
-        width:220px;
-        padding:50px 20px;
+        margin:30px;
+        width:250px;
     }
     
 }

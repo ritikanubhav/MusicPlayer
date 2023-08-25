@@ -24,3 +24,9 @@
 .menu:hover{
     scale:1.1;
 }
+@media only screen and (max-width:750px){
+    
+    .vertical-navbar{
+       display: none;
+    }
+}

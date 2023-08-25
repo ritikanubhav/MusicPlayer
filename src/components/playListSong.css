@@ -29,7 +29,6 @@
     visibility: hidden;
 }
 
-
 .song-detail h3,.song-detail p{
     width:250px;
     white-space: nowrap;
@@ -49,3 +48,49 @@ h3{
 .song-detail p{
     font-size:14px;
 }
+@media only screen and (max-width:750px)and (min-width: 500px){
+    
+    .playListSong{
+        height:70px;
+        font-size: 0.9em;
+        padding:0 15px;
+    }
+    .song-detail h3,.song-detail p{
+        width:200px;
+    }
+    .playListSong:hover .img-detail{
+        scale:1.05;
+        transform: translate(15px);
+    }
+    .play-gif{
+        scale:0.8;
+    }
+}
+@media screen and (max-width: 500px)  {
+    .playListSong{
+        height:70px;
+        font-size: 0.9em;
+        padding:0 15px;
+    }
+    .song-detail h3,.song-detail p{
+        width:200px;
+    }
+    .playListSong:hover .img-detail{
+        scale:1.05;
+        transform: translate(15px);
+    }
+    .play-gif{
+        scale:0.8;
+        margin:0 10px;
+    }
+    .more-option{
+        display:none;
+    }
+    .duration{
+        display:none;
+    }
+    .heart{
+        display:none;   
+    }
+  }
+  
