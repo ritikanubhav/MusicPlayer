@@ -41,9 +41,6 @@
 
     
 @media only screen and (max-width:750px){
-    .navbar{
-        height:1em;
-    }
     .typewriter{
         font-size:1em;
     }
